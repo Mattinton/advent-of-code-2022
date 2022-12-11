@@ -10,7 +10,6 @@ const input = fs
   .trim();
 
 const treeRows = input.split("\n");
-
 const forestDimensions = [treeRows.length, treeRows[0].length];
 
 let bestViewingScore = 0;
@@ -52,7 +51,7 @@ for (let y = 1; y < forestDimensions[0] - 1; y++) {
       leftContinue = leftContinue && left && parseInt(left) < treeHeight;
 
       diff++;
-    } while (up || right || bottom || left);
+    } while (upContinue || rightContinue || bottomContinue || leftContinue);
 
     const viewingScore =
       upViewDistance *

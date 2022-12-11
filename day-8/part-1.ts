@@ -10,7 +10,6 @@ const input = fs
   .trim();
 
 const treeRows = input.split("\n");
-
 const forestDimensions = [treeRows.length, treeRows[0].length];
 
 let visibleTrees = forestDimensions[0] * 2 + forestDimensions[1] * 2 - 4;
