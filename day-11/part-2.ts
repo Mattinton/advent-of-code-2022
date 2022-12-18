@@ -47,7 +47,8 @@ for (const monkeyRow of monkeyRows) {
 
   // Admittedly I was a bit confused at what to do here for part 2. I knew
   // I needed some way to keep the numbers small, but I didn't know how to
-  // do that. I got a small hint from the subreddit that then let me come up with this.
+  // do that while maintaining the same results. . I got a small hint from
+  // the subreddit that then let me come up with this.
   commonMultiple *= monkey.divideByDecision;
   monkeys.set(parseInt(monkeyNum.match(/\d+/)[0]), monkey);
 }
